@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('/images/fondohome.jpg');
+    background-size: cover; /* hace que la imagen cubra todo el fondo */
+    background-position: center; /* centra la imagen */
+    background-repeat: no-repeat; /* evita que se repita */
+    height: 100vh; /* asegura que cubra todo el alto de la ventana */
+}
+
+header {
+    display: grid;
+    width: 100%;
+    height: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.logo {
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    font-size: 2em;
+    padding-left: 2em;
+}
+
+.menuHeader {
+    display: flex;
+    height: 100%;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuHeader li {
+    margin: 0 1em;
+}
+
+.redesHeader {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2em;
+}
+
+.redesHeader img {
+    margin: 0 0.2em;
+}
