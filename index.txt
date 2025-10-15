@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>&lt;title&gt; element</title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="cabeceraHeader">
+
+      <div class="logo">
+        <h1>BGVDESIGN</h1>
+      </div>
+
+      <nav class="menuHeader">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="redesHeader">
+        <img src="images/instagramBlanco.svg" alt="enlace instagram" width="20px">
+        <img src="images/facebookBlanco.svg" alt="enlace facebook" width="20px">
+      </div>
+
+    </div>
+
+    <div class="div2HeaderHome">BGVDESIGN</div>
+    <div class="div3HeaderHome">
+      <p><strong>Bienvenidos a mi portafolio.</strong> Las puertas están abiertas!.
+        Mi nombre es Boris Garcés Vernier. Mi especialidad es el diseño web, aunque también me gusta probar con en otras
+        áreas . Espero que disfruten explorando mis trabajos. Estaré encantado de colaborar y de poder ayudar con esos
+        proyectos que tienen en mente.</p>
+    </div>
+
+    <div class="chevronDownHeaderHome">
+      <img src="images/keyboard_arrow_down_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Continuar">
+    </div>
+
+  </header>
+
+
+  <main>
+    <div class=" containerMain">
+      <div class="titleDesignMultiplataforma">
+        <h2>Diseño Web <strong>Multiplataforma</strong></h2>
+        <hr>
+      </div>
+      <div>
+
+        <div class="main2">
+          <section>
+            <h2>Diseño web responsive</h2>
+            <p>diseñoweb adaptable a escritorio,tablet y móvil. Sin perder funcionalidad</p>
+          </section>
+
+          <section>
+            <h2>Diseño web responsive</h2>
+            <p>diseñoweb adaptable a escritorio,tablet y móvil. Sin perder funcionalidad</p>
+          </section>
+
+          <section>
+            <h2>Diseño web responsive</h2>
+            <p>diseñoweb adaptable a escritorio,tablet y móvil. Sin perder funcionalidad</p>
+          </section>
+
+        </div>
+
+        <div>
+          <h2 class="main3">Hola3</h2>
+        </div>
+
+      </div>
+  </main>
+
+</body>
+
+</html>
