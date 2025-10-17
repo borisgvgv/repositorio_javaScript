@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+h1,
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+}
+
+/*tipografías embed*/
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fira-sans-extra-condensed-thin {
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/*-------------*/
+
+/*Header ------------------ */
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/fondohome.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0 2%;
+}
+
+.containerCabeceraEscritorio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.menuHeader ul {
+    display: flex;
+    gap: 10%;
+    color: #ffffff;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 15vw;
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+
+}
+
+.textoHeaderHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30%;
+    font-size: 1.2em;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: #fff;
+
+}
+
+.chevronDownHeaderHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+}
+
+
+/**Header ------------------ */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .textoHeaderHome{
+       padding: 10% 10%;
+    }
+
+    .menuHeader ul {
+        display: none;
+    }
+
+}

@@ -1,15 +1,17 @@
 * {
     margin: 0px;
     padding: 0px;
+}
+
+li {
     list-style: none;
+}
+
+a {
     text-decoration: none;
 }
 
-h1 {
-    font-weight: normal;
-}
-
-/*tipografías embed*/
+/*tipografías embed ------- */
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -22,156 +24,195 @@ h1 {
     font-style: normal;
 }
 
-/*-------------*/
+/**tipografías embed ------- */
 
-/*Header ------------------ */
-header {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-
-    background-image: url('../images/fondohome.jpg');
-    background-size: cover;
-    /* hace que la imagen cubra todo el fondo */
-    background-position: center;
-    /* centra la imagen */
-    background-repeat: no-repeat;
-    /* evita que se repita */
-    height: 100vh;
-    width: 100%;
-    /* asegura que cubra todo el alto de la ventana */
-}
-
-.cabeceraHeader {
-    position: absolute;
-    width: 100%;
-    display: grid;
-    padding: 1em 0;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.logo {
-    display: flex;
-    justify-items: flex-start;
-    align-items: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding-left: 2.3em;
-    color: #ffffff;
-
 }
 
-
-
-.menuHeader {
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 1.1em;
-
-}
-
-.menuHeader ul {
-    display: flex;
-}
-
-.menuHeader li {
-    margin: 0 1em;
-}
-
-.menuHeader li a {
-    color: aliceblue;
-}
-
-
-
-.redesHeader {
-
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 2.3em;
-}
-
-.redesHeader img {
-    margin: 0 0.2em;
-}
-
-.div2HeaderHome {
-    position: absolute;
-    width: 100%;
-    top: 10%;
-    display: flex;
-    font-size: 29vw;
-    justify-content: center;
-    align-items: center;
-    font-family: "Bebas Neue", sans-serif;
-    color: transparent;
-    -webkit-text-stroke: 1px #ffffff;
-
-}
-
-.div3HeaderHome {
-    position: absolute;
-    top: 72%;
-    width: 25%;
-
-    color: #ffffff;
+p {
     font-family: "Fira Sans Extra Condensed", sans-serif;
     font-weight: 200;
     font-style: normal;
+}
+
+
+
+header {
+    background-image: url(../images/fondohome.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 1% 2%;
+}
+
+
+.containerCabeceraEscritorio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+
+.containerCabeceraEscritorio .logo {
+    width: 30%;
+}
+
+.containerCabeceraEscritorio .menuHeader ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+
+}
+
+.containerCabeceraEscritorio .menuHeader ul li a {
+    color: #fff;
+}
+
+.containerCabeceraEscritorio .redesHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 30%;
+    gap: 2%;
+}
+
+
+/* Escondemos cabecera de escritorio*/
+
+.redesHeaderMovil{
+    display: none;
+}
+
+.containerCabeceraMovil {
+    display: none;
+}
+
+
+.presentacion {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0% 3% 0%;
+    font-size: 15vw;
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+}
+
+.textoHeaderHome {
+    position: relative;
+    top: -5em;
     font-size: 1.3em;
-    padding-left: 2.3em;
+    width: 30%;
+    margin: auto;
+    color: #ffffff;
 
 }
 
 .chevronDownHeaderHome {
-    position: absolute;
-    top: 90%;
+    position: relative;
+    top: -2em;
     display: flex;
-    width: 100%;
     justify-content: center;
-    fill: #ffffff;
+    margin: auto;
+    width: 30%;
 }
 
 .chevronDownHeaderHome img {
     width: 3em;
 }
 
-/** header ------------------ */
 
-/*Main------------------ */
+/* media querys */
 
+@media (max-width: 768px) {
+    .containerCabeceraEscritorio {
+        display: none;
+    }
 
-.containerMain {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 500px;
-    grid-template-rows: repeat(4, 1fr);
+     .containerCabeceraMovil .menuHeader{
+        display: none;
+    }
+
+    .containerCabeceraMovil {
+        display: block;
+    }
+
+.redesHeaderMovil{
+    display: block;
 }
 
-.titleDesignMultiplataforma {
-    margin: 10% 10% 2% 10%;
-    font-family: "Fira Sans Extra Condensed", sans-serif;
-}
+    .containerCabeceraMovil {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+    }
 
-.titleDesignMultiplataforma h2 {
-    font-weight: 200;
-    font-style: normal;
-}
 
-.main2{
-    display: flex;
-    justify-content: space-between;
-    margin:1% 10% 2% 10%; ;
-}
-.main2 section{
-    width:20% ;
-    
-}
+    .containerCabeceraMovil .logo {
+        width: 20%;
+    }
 
-/**main------------------ */
+    .containerCabeceraMovil .logo h1 {
+        font-size: medium;
+    }
+
+    .containerCabeceraMovil .menuHeader ul {
+        display: none;
+        display: flex;
+        flex-direction: row;
+        gap: 20%;
+
+    }
+
+    .containerCabeceraMovil .menuHeader ul li a {
+        color: #fff;
+    }
+
+    .containerCabeceraMovil .redesHeader {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        gap: 20%;
+    }
+
+    .textoHeaderHome {
+        position: relative;
+        top: 0em;
+        font-size: 1.3em;
+        width: 80%;
+        margin: auto;
+        color: #ffffff;
+
+    }
+
+    .chevronDownHeaderHome {
+        position: relative;
+        top: 2em;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 20%;
+    }
+
+    .chevronDownHeaderHome img {
+        width: 3em;
+    }
+
+
+
+}
