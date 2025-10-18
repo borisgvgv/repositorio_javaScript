@@ -56,6 +56,18 @@ header {
     padding: 1% 2%;
 }
 
+main {
+    min-height: 100vh;
+    padding: 1% 2%;
+}
+
+.containerMain {
+    width: 80%;
+    margin: auto;
+    padding-top: 15%;
+
+}
+
 
 .containerCabeceraEscritorio {
     display: flex;
@@ -93,7 +105,7 @@ header {
 
 /* Escondemos cabecera de escritorio*/
 
-.redesHeaderMovil{
+.redesHeaderMovil {
     display: none;
 }
 
@@ -142,19 +154,12 @@ header {
         display: none;
     }
 
-     .containerCabeceraMovil .menuHeader{
+    .containerCabeceraMovil .menuHeader {
         display: none;
     }
 
     .containerCabeceraMovil {
         display: block;
-    }
-
-.redesHeaderMovil{
-    display: block;
-}
-
-    .containerCabeceraMovil {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -163,9 +168,6 @@ header {
     }
 
 
-    .containerCabeceraMovil .logo {
-        width: 20%;
-    }
 
     .containerCabeceraMovil .logo h1 {
         font-size: medium;
@@ -183,36 +185,46 @@ header {
         color: #fff;
     }
 
-    .containerCabeceraMovil .redesHeader {
+    .containerCabeceraMovil .hamburguerMenu:hover .menuHeader ul {
+        display: block;
+    }
+
+    .presentacion {
         display: flex;
-        flex-direction: row;
-        width: 20%;
-        gap: 20%;
+        justify-content: center;
+        margin: 2% 0% 3% 0%;
+        font-size: 15vw;
+        color: transparent;
+        -webkit-text-stroke: 1px #ffffff;
     }
 
     .textoHeaderHome {
-        position: relative;
-        top: 0em;
-        font-size: 1.3em;
-        width: 80%;
-        margin: auto;
-        color: #ffffff;
+        width: 60%;
+        top: 0%;
+        padding: 5%;
+
+    }
+
+    .redesHeaderMovil {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20% 0% 0% 0%;
+        gap: 2%;
 
     }
 
     .chevronDownHeaderHome {
-        position: relative;
-        top: 2em;
+        top: 0%;
+        padding-top: 20%;
         display: flex;
         justify-content: center;
-        margin: auto;
         width: 20%;
     }
 
     .chevronDownHeaderHome img {
         width: 3em;
     }
-
-
 
 }
