@@ -103,17 +103,6 @@ main {
 }
 
 
-/* Escondemos cabecera de escritorio*/
-
-.redesHeaderMovil {
-    display: none;
-}
-
-.containerCabeceraMovil {
-    display: none;
-}
-
-
 .presentacion {
     display: flex;
     justify-content: center;
@@ -146,15 +135,27 @@ main {
     width: 3em;
 }
 
+/* Escondemos lo que no queremos ver la vista escritorio*/
+
+.containerCabeceraMovil {
+    display: none;
+}
+
+.menuHeaderMovil {
+    display: none;
+}
+
+.redesHeaderMovil {
+    display: none;
+}
+
+/** Escondemos lo que no queremos ver la vista escritorio*/
 
 /* media querys */
 
 @media (max-width: 768px) {
-    .containerCabeceraEscritorio {
-        display: none;
-    }
 
-    .containerCabeceraMovil .menuHeader {
+    .containerCabeceraEscritorio {
         display: none;
     }
 
@@ -162,30 +163,28 @@ main {
         display: block;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
         color: #fff;
     }
 
-
-
-    .containerCabeceraMovil .logo h1 {
-        font-size: medium;
-    }
-
-    .containerCabeceraMovil .menuHeader ul {
-        display: none;
+   
+    .menuHeaderMovil ul {
         display: flex;
-        flex-direction: row;
-        gap: 20%;
-
+        flex-direction: column;
+        align-items: end;
+        padding: 2% 1%;
+        gap: 10px;
+        background-color: rgba(3, 110, 114, 0.493);
     }
-
-    .containerCabeceraMovil .menuHeader ul li a {
+    .menuHeaderMovil ul li a{
         color: #fff;
     }
 
-    .containerCabeceraMovil .hamburguerMenu:hover .menuHeader ul {
+     .menuHeaderMovil {
+        display: none;
+    }
+    .containerCabeceraMovil .hamburguerMenu:hover .menuHeaderMovil{
         display: block;
     }
 
@@ -211,7 +210,7 @@ main {
         flex-direction: row;
         justify-content: center;
         padding: 20% 0% 0% 0%;
-        gap: 2%;
+        gap: 1.5%;
 
     }
 
